@@ -13,6 +13,14 @@ use Illuminate\Http\Request;
 |
 */
 
+Route::get('/', function () {
+  return 'API BASE ACL';
+});
+
+
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+
